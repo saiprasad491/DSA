@@ -1,0 +1,33 @@
+1 Even or Odd
+2 Max of two numbers
+3 Min of two numbers
+4 Max of three numbers
+5 Min of three numbers
+6 Max of four numbers
+7 Min of four numbers
+8 Max of five numbers
+9 Min of five numbers
+10 Swapping of two integer values
+11 Absolute value
+12 sum of n natural numbers
+13 factorial of given numbers
+14 digits extraction
+15 count digits
+16 reverse a number
+17 palindrome number
+18 trailing zeros of factorial
+19 iterative power 
+20 sum of digits
+21 sum of even digits
+22 sum of odd digits
+23 sum of prime digits
+24 prime number or not
+25 prime factorization -- to do
+26 all divisors of n
+27 power x to n -- to do
+     or
+   armstrong number
+28 perfect number Ex. 6 because 1+2+3 = 6
+29 Fibonacci sequence
+30 Tribonacci sequence
+31 strong number Ex. 145 because 1! + 4! + 5! = 1+24+120 = 125
