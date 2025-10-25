@@ -1,0 +1,200 @@
+Chapter:04 -----> data structures in python
+-------------------------------------------
+01. mutable and immutable objects
+  Ex. mutable
+    list, set, dict
+  Ex. immutable
+    tuple, string, fundamental data types
+
+02. string data structure
+  s = 'SAI'
+  print(s[0]) #S
+  print(s[-1]) #I
+
+  s = "abcdefg"
+  #    0123456
+  print(s)        #abcdefg
+  print(s[0:7:1]) #abcdefg
+  print(s[0:7:2]) #aceg
+  print(s[0:7:3]) #adg
+  print(s[:7:1])  #abcdefg
+  print(s[:7:])   #abcdefg
+  print(s[::])    #abcdefg
+  print(s[::-1])  #gfedcba
+
+  print("sai"+10) #TypeError: can only concatenate str (not "int") to str
+  print("sai"+str(10)) #sai10
+
+  print("ab"*3) #ababab
+  print("ab"*int("3")) #ababab
+  print("ab"*"3") #TypeError: can't multiply sequence by non-int of type 'str'
+
+  print("ai" in "sai")  #True
+  print("is" not in "sai")  #True
+
+  print("abc"<"abd")  #True
+  print("abc"<"abc")  #False
+  print("abc">"abd")  #False
+  print("abc">"abc")  #False
+  print("abc"<="abd")  #True
+  print("abc">="abc")  #True
+  print("abc"=="abc")  #True
+  print("abc"!="abc")  #False
+
+  print(ord('a')) #97
+  print(chr(97))  #a
+
+  string specific methods
+  =======================
+  upper()
+  lower()
+  swapcase()
+  title()
+  capitalize()
+
+  s = 'welcoMe to Python Programming'
+  print(s)                #welcoMe to Python Programming
+  print(s.upper())        #WELCOME TO PYTHON PROGRAMMING
+  print(s.lower())        #welcome to python programming
+  print(s.swapcase())     #WELCOmE TO pYTHON pROGRAMMING
+  print(s.title())        #Welcome To Python Programming
+  print(s.capitalize())   #Welcome to python programming
+
+  s = 'sai'
+  print(s.count('ai'))  #1
+  print(s.replace('ai',"hubha"))  #shubha
+  print(s.startswith('s'))  #True
+  print(s.endswith('sh'))  #False
+  print(s.index('ai'))  #1
+  print(s.find('ai'))  #1
+  print(s.find('aii'))  #-1
+  print(s.index('aii'))  #ValueError: substring not found
+
+  l = ['python','is','very','easy']
+  print(" ".join(l))  #python is very easy
+  print(":".join(l))  #python:is:very:easy
+
+  s = "sai"
+  print(s.isalnum())  #True
+  print("123".isalnum())  #True
+  print("123".isdigit())  #True
+  print(s.isalpha())  #True
+  print("abd".islower())  #True
+  print("AD".isupper())  #True
+
+  print("".isspace()) #False
+  print("abd cd".isspace()) #False
+  print(" ".isspace()) #True
+  print("  ".isspace()) #True
+
+03. list data structure
+  
+  li = [10,20.34,"abc",True,1+2j]
+  print(li,type(li)) #[10, 20.34, 'abc', True, (1+2j)] <class 'list'>
+
+  l1 = [1,2,3]
+  l2 = l1
+  print(l1 is l2) #True
+  print(id(l1),id(l2))  #1933705893056 1933705893056
+
+  l1 = [1,2,3]
+  l2 = l1.copy()
+  print(l1 is l2) #False
+  l1[0] = 111
+  print(l1,l2)  #[111, 2, 3] [1, 2, 3]
+
+  case 1
+  l1[0] = 11
+  print(l1,l2)  #[11, [2, 3], 4] [1, [2, 3], 4]
+
+  case 2
+  l1[1][0] = 22
+  print(l1,l2)  #[1, [22, 3], 4] [1, [22, 3], 4]
+
+  import copy
+  l1 = [1,[2,3],4]
+  l2 = copy.deepcopy(l1)
+  l1[1][0] = 22
+  print(l1,l2)  #[1, [22, 3], 4] [1, [2, 3], 4]
+  
+  List comprehension
+  l1 = [1,2,3,4,5]
+  l2 = [i+1 for i in l1]
+  print(l1,l2)  #[1, 2, 3, 4, 5] [2, 3, 4, 5, 6]
+
+  l3 = [i+1 for i in l1 if i%2==0]
+  print(l1,l3)  #[1, 2, 3, 4, 5] [3, 5]
+
+  import  math
+  l1 = [1,2,3,4]
+  l2 = [math.factorial(i) for i in l1]
+  print(l2) #[1, 2, 6, 24]
+
+  l1 = ['sai','kunal','situ','rajkumar','linu']
+  l2 = [i.upper() for i in l1]
+  print(l2) #['SAI', 'KUNAL', 'SITU', 'RAJKUMAR', 'LINU']
+
+  ol = [1,2,3,4,5,6]
+  nl = [i for i in ol if i%2==0]
+  print(nl) #[2, 4, 6]
+
+  list common methods
+  ===================
+  l1 = [1,2,3,4,5]
+  print(len(l1))  #5
+  print(max(l1))  #5
+  print(min(l1))  #1
+  print(sum(l1))  #15
+  print(sorted(l1)) #[1, 2, 3, 4, 5]
+  print(sorted(l1,reverse=True))  #[5, 4, 3, 2, 1]
+
+04. tuple data structure
+
+  T = (1,2,3,(4,5))
+  print(type(T))  #<class 'tuple'>
+
+  T = (1,2,3,4)
+  # print(T.index(0)) ValueError: tuple.index(x): x not in tuple
+  print(T.index(4)) #3
+  print(T.count(4)) #1
+
+  Tuple packing
+  a = 111
+  b = 222
+  c = 333
+  t = a,b,c
+  print(a, type(a))
+  print(b, type(b))
+  print(c, type(c))
+  print(t, type(t))
+  111 <class 'int'>
+  222 <class 'int'>
+  333 <class 'int'>
+  (111, 222, 333) <class 'tuple'>
+
+  Tuple unpacking
+  c = (1,2,3)
+  a,b,d = c
+  print(a,type(a))
+  print(b,type(b))
+  print(d,type(d))
+  print(c,type(c))
+  1 <class 'int'>
+  2 <class 'int'>
+  3 <class 'int'>
+  (1, 2, 3) <class 'tuple'>
+
+05. set data structure
+
+  s = {1,2,3}
+  print(s)  #{1, 2, 3}
+  #s.add(4,5)  #TypeError: set.add() takes exactly one argument (2 given)
+  #s.remove(5) #KeyError: 5
+  s.add(4)  #TypeError: set.add() takes exactly one argument (2 given)
+  print(s)  #{1, 2, 3, 4}
+  s.remove(4)
+  print(s)  #{1, 2, 3}
+
+  
+06. dict data structure
+07. sample programs
