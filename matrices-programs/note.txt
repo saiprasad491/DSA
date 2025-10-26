@@ -1,0 +1,15 @@
+1. read and write matrix elements
+2. sum of each element in matrix
+3. addition of two matrices
+4. subtraction of two matrices
+5. multiplication of two matrices
+6. row wise sum calculation
+7. column wise sum calculation
+8. sum of diagonal elements
+9. sum of opposite diagonal elements
+10. transpose of give matrix
+11. identity matrix or not
+12. swapping of two rows
+13. swapping of two columns
+14. swapping of diagonal elements
+15. rotate matrix by 90 degrees
