@@ -1,0 +1,31 @@
+1 sum of elements present in the given list
+2 average of elements present in the given list
+3 separate even and odd elements from a list
+4 generate a lists with even and odd elements in the range of 0 to 10 inclusive
+5 get smaller elements from a list lesser than the given element x
+6 generate 10 random numbers from 1 to 20 and append them to the list
+ import random
+ random.randint(1,10) both 1 and 10 are include
+7 swap first and last elements in the list
+8 count number of elements greater than x
+9 reverse the given list
+10 get the index of the given element
+11 find the largest/maximum element in a list
+12 find second maximum/largest element in a list
+13 check if a list is sorted or not 
+14 remove duplicate elements from a list
+15 left rotate a list by one element
+16 right rotate a list by one element
+17 left rotate a list by 'd' places
+    from collections import deque
+    def fun1(l,d):
+      dq = deque(l)
+      dq.rotate(-i)
+      return list(dq)
+18 right rotate a list by 'd' places
+19 merging two lists into 3rd list
+20 merging two lists into 3rd list and sort the list
+21 who has the majority? 
+    Given a list of size n and return an element's position which appears greater than n/2 times
+22 Find union of two list objects
+23 Find intersection of two list objects
