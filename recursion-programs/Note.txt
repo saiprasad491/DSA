@@ -29,21 +29,4 @@
     1. Only one disc moves at a time
     2. No larger disc above smaller disc
     3. Only top disc of the tower can be moved
-    
-14.
-15.
-16.
-17.
-18.
-19.
-20.
-21.
-22.
-23.
-24.
-25.
-26.
-27.
-28.
-29.
-30.
+ 
