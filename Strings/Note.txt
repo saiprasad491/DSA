@@ -1,0 +1,45 @@
+1. Read and write strings from user
+2. Read string and print characters present at +ve and -ve locations
+3. Print characters present at even index values
+4. Print characters present at odd index values
+5. count number of vowels present in a string
+6. count number of consonants present in a string
+7. count number of alphabets present in a string
+8. count number of digits in a string
+9. count spaces in a string
+10. count special characters in a string
+11. reverse the given string
+12. convert given string into upper case
+13. convert given string into lower case
+14. toggle case or swap case
+15. convert even index character into upper case and odd indexed char into lower case
+16. reverse the sentence
+17. reverse the even indexed words in sentence
+18. reverse the odd indexed words in sentence
+19. reverse individual words in sentence
+20. convert each word first character into uppercase
+21. convert each char first and last char into uppercase
+22. convert each char except first and last char into uppercase
+23. convert every even length word into upper case remaining lower case
+24. return middle char(s) of a string
+25. sort the characters present in the string
+26. sort the list of names
+27. remove duplicate characters in a string
+28. remove special characters
+  re.sub(reg,replacement,target string)
+29. remove vowels from a string
+30. check if a string is palindrome or not 
+31. return longest (w.r.t len) palindrome in a string
+32. check if a string is rotated
+    check = s+s
+    s.find(s2) != -1
+33. check whether two strings are anagrams or not
+34. check whether a string pangram or not
+   Ex. The quick brown fox jumps over the lazy dog
+35. check valid string
+  i. length greater than or equal to 10
+  ii. contain at least 1 upper case char
+  iii. contain at least 1 lower case char
+  iv. contain at least 1 special char @#$-*
+
+  Note: not any(c.isupper() for c in s)
